@@ -1370,6 +1370,12 @@ vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
+# Camera (Ace 5)
+odm/lib64/camera/awb_parameter_sunny_ov02b.bin
+odm/lib64/camera/com.qti.sensor.ov02b.so
+odm/lib64/camera/com.qti.sensormodule.sunny_ov02b.bin
+odm/lib64/camera/com.qti.tuned.sunny_ov02b.bin
+
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
 vendor/firmware/CAMERA_ICP.b01
@@ -1404,6 +1410,11 @@ odm/firmware/fastchg/bms_heating_config.txt
 odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/firmware/fastchg/silicon_x24_smart_chg_config_table.txt
 odm/firmware/fastchg/smart_chg_config_table.txt
+
+# Charger firmware (Ace 5)
+odm/firmware/fastchg/23851/charging_hyper_mode_config.txt
+odm/firmware/fastchg/23851/silicon_x24_charging_hyper_mode_config.txt
+odm/firmware/fastchg/silicon_x24_bms_heating_config.txt
 
 # Display calibration data
 my_product/vendor/etc/display_apollo_list_AA577_P_3_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA577_P_3_A0020_dsc_cmd_mode_panel.xml
@@ -1696,7 +1707,8 @@ odm/lib64/libaiboost_ubwc.so
 odm/lib64/libhta_hexagon_runtime_snpe.so
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN220.conf_23867:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-mtp-SN220.conf_23851:odm/etc/libnfc-mtp-SN220.conf_23851
+odm/etc/nfc/libnfc-mtp-SN220.conf_23867:odm/etc/libnfc-mtp-SN220.conf_23867
 odm/etc/nfc/libnfc-nci.conf_23867:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
@@ -1741,6 +1753,11 @@ odm/etc/sensor/config/lanai_mtp_oplus_smart_prox.json
 odm/etc/sensor/config/lanai_mtp_pocket.json
 odm/etc/sensor/config/lux_aod.json
 odm/etc/sensor/sensor_config.json
+
+# Sensors config (Ace 5)
+odm/etc/sensor/config/lanai_mtp_oplus_flight_scene.json
+odm/etc/sensor/config/lanai_mtp_oplus_rotation_detect.json
+odm/etc/sensor/config/lanai_mtp_oplus_sleep.json
 
 # Touchscreen firmware
 odm/firmware/tp/23851/FW_S3910_BOE.img
